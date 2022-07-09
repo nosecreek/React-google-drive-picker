@@ -25,6 +25,7 @@ export default function useDrivePicker(): [
   const [config, setConfig] =
     useState<PickerConfiguration>(defaultConfiguration)
   const [authRes, setAuthRes] = useState<authResult>()
+  const google = window.google
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let picker: any
